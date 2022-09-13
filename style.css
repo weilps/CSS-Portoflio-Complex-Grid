@@ -1,0 +1,35 @@
+* {
+  margin: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a1 a1 a2"
+    "a3 a4 a2"
+    "a3 a5 a5";
+}
+
+div:nth-child(1) {
+  background: yellow;
+  grid-area: a1;
+}
+div:nth-child(2) {
+  background: purple;
+  grid-area: a2;
+}
+div:nth-child(3) {
+  background: green;
+  grid-area: a4;
+}
+div:nth-child(4) {
+  background: red;
+  grid-area: a3;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: a5;
+}
