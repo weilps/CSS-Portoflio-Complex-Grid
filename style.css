@@ -1,5 +1,7 @@
 * {
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,8 +13,9 @@ body {
     "a1 a1 a2"
     "a3 a4 a2"
     "a3 a5 a5";
+  gap: 20px;
+  padding: 20px;
 }
-
 div:nth-child(1) {
   background: yellow;
   grid-area: a1;
